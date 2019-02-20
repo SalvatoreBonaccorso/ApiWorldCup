@@ -1,0 +1,14 @@
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-3">Result groups</h1>
+      <div class="lead bg-primary text-white" *ngFor='let group of groups'>
+          <h3 class="bg-secondary text-white">Group {{group.letter}}</h3>
+          <p *ngFor='let item of group.ordered_teams'>
+              {{item.country}} {{item.points}}
+
+          </p>
+        </div>
+    </div>
+  </div>
+  
+

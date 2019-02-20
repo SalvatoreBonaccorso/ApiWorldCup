@@ -1,0 +1,14 @@
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-3">Result team</h1>
+      <div class="lead bg-primary text-white" *ngFor='let team of teams'>
+          <h3 class="bg-secondary text-white">{{team.country}}</h3>
+          <p>
+            win {{team.wins}}
+            draw {{team.draws}}
+            lose {{team.losses}}
+          </p>
+        </div>
+    </div>
+  </div>
+
